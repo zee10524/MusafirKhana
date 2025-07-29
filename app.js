@@ -56,7 +56,7 @@ main().then(() => {
 });
 
 const sessionOptions = {
-    secret: "mysupersecretcode",
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {
